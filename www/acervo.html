@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="components/app.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header class="header" id="header">
+      <div class="navbar">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <input type="search" name="search" id="search" placeholder="Search">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        
+      </div>
+    </header>
+
+    <div class="container"><br>
+        <div class="dados"></div>
+    </div>
+
+     <div class="menu">
+    <ul>
+        <li><a href="imprestimo.html"><img id="imagem" src="https://img.icons8.com/small/32/000000/user-male-circle.png"/></a></li>
+        <li><a href="#"><img id="imagem" src="https://img.icons8.com/small/32/000000/crown.png"/></a></li>
+        <li><a href="#"></a><img id="imagem" src="https://img.icons8.com/small/32/000000/book-shelf.png"/></li>
+        
+        <li><img id="image" src="/img/pesquisa.png" onclick="trocaImg()"></li>
+    </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/07cc412226.js" crossorigin="anonymous"></script>
+</body>
+<script>
+    var num = 2;
+     var img = document.getElementById("image");
+      var header = document.getElementById("header");
+            function trocaImg(){
+
+            setTimeout(function () {
+            if (num == 1)
+                {
+                img.src = "/img/pesquisa.png";
+                header.style.display = "none";
+                }
+            else if (num == 2)
+                {
+                img.src = "/img/limpa-pesquisa.png";
+                }
+                //garante que num fique alternando entre 1 e 2
+                num = (num % 2) + 1;
+                }, 1000);
+
+                header.style.display = "";
+            }
+
+</script>
+</html>

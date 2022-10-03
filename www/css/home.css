@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.header {
+    display: ;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background: #fff; 
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.header .navbar a i {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #35187f;
+}
+
+.header .navbar input[type="search"] {
+    width: 350px;
+    padding: 0.3rem;
+    background: #f0f0f0;
+    margin: 1rem;
+}
+
+.header .navbar button {
+    position:relative;
+    background: none;
+    right: 2.2rem;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f0f0f0;
+}
+
+.dados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.productBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 160px; /*170-180 better*/
+    min-height: 40vh;
+    margin: 0.6rem;
+    background: #fff;
+}
+
+.productBox .bookBox {
+    text-align: center;
+    width: 100%;
+}
+
+.productBox .bookBox h2 {
+    margin: 1rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titleBox {
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+
+.btnBox {
+    text-align: center;
+}
+
+.btnBox button {
+    padding: 0.4rem;
+    margin: 1rem;
+    width: 8rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    color: #fff;
+    background: #35187f;
+}
+
+img {
+    margin-top: 1rem;
+    width: 8rem;
+}
+ .menu{
+            position: fixed;
+            top: 92%;
+            left: 25%;
+            width: 12rem;
+            height: 2.5rem;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start ;
+            height: 100%;
+            margin-top: -0.2rem;
+            margin-left: 0.4rem;
+        }
+        li {
+            margin-left: 0px;
+            padding-left: 10px;
+        }
+        #image{
+            height: 33px;
+            width: 33px;
+            cursor: pointer;
+        }
+        #imagem{
+            height: 33px;
+            width: 33px;
+            cursor: pointer;
+        }
